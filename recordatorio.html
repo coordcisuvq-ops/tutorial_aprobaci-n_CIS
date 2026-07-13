@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Recordatorio · Condiciones CIS</title>
+<style>
+  :root{
+    --maroon: #9f283b;
+    --maroon-dark: #7e2230;
+    --ink: #1C1B1B;
+    --body-text: #4A4A4A;
+    --border: #D6D3D2;
+    --card-bg: #FDFCFC;
+    --gray-badge: #6E6E6E;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: #F1EFEE;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--body-text);
+    padding: 28px 0;
+  }
+  .card{
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .top{
+    height: 6px;
+    background: linear-gradient(90deg, var(--maroon-dark), var(--maroon));
+  }
+  .inner{ padding: 22px 26px 24px 26px; }
+
+  .eyebrow{
+    color: var(--maroon);
+    font-weight: 700;
+    font-size: 11.5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+  }
+  h1{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--ink);
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .rule{
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0 0 18px 0;
+    padding: 10px 14px;
+    background: #F7F1F1;
+    border-left: 3px solid var(--maroon);
+    border-radius: 4px;
+  }
+  .rule strong{ color: var(--ink); }
+
+  .row{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    padding: 11px 0;
+    border-top: 1px solid #ECE9E8;
+  }
+  .row:first-of-type{ border-top: none; }
+  .num{
+    flex-shrink:0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--maroon);
+    color: #fff;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .icon{ flex-shrink: 0; }
+  .rtext{ flex: 1; min-width: 0; }
+  .rtext .name{
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 14.5px;
+  }
+  .rtext .sub{
+    font-size: 12.5px;
+    color: var(--gray-badge);
+  }
+  .badge{
+    flex-shrink:0;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .badge.oblig{ background: var(--maroon); color: #fff; }
+  .badge.opt{ background: #EDEAE9; color: var(--gray-badge); border: 1px solid var(--border); }
+
+  .foot{
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--body-text);
+  }
+
+  @media (max-width: 480px){
+    h1{ font-size: 19px; }
+    .rtext .name{ font-size: 13.5px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="top"></div>
+  <div class="inner">
+
+    <p class="eyebrow">Recordatorio</p>
+    <h1>Condiciones para aprobar el CIS</h1>
+
+    <p class="rule">Para aprobar el CIS se requiere obtener <strong>60 puntos o más de promedio</strong> entre las actividades de evaluación planificadas y registrar una realización no inferior al <strong>75&nbsp;%</strong> de las actividades. Las actividades de la <strong>semana 2 y 3</strong> son obligatorias, y al menos el <strong>Foro de la semana 1 o el Foro de la semana 4</strong> debe estar realizado.</p>
+
+    <div class="row">
+      <div class="num">1</div>
+      <span class="icon">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8C6 6.34 7.34 5 9 5H24C25.66 5 27 6.34 27 8V18C27 19.66 25.66 21 24 21H13L7 26V21H9C7.34 21 6 19.66 6 18V8Z" fill="#5B8FC9"/>
+          <path d="M16 15C16 13.34 17.34 12 19 12H31C32.66 12 34 13.34 34 15V22C34 23.66 32.66 25 31 25V30L26 25H19C17.34 25 16 23.66 16 22V15Z" fill="#7FB88A"/>
+        </svg>
+      </span>
+      <div class="rtext">
+        <div class="name">Me presento</div>
+        <div class="sub">Foro + perfil del campus</div>
+      </div>
+      <span class="badge opt">Foro · 1 de 2</span>
+    </div>
+
+    <div class="row">
+      <div class="num">2</div>
+      <span class="icon">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 5H26L32 11V34C32 35.1 31.1 36 30 36H10C8.9 36 8 35.1 8 34V7C8 5.9 8.9 5 10 5Z" fill="#BFD9F5"/>
+          <path d="M26 5V9C26 10.1 26.9 11 28 11H32L26 5Z" fill="#8FB8E8"/>
+          <circle cx="26" cy="24" r="9" fill="#E8863A"/>
+          <path d="M21.7 24.2L24.6 27.1L30.3 21.1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <div class="rtext">
+        <div class="name">Cuestionario</div>
+        <div class="sub">Actividad 1</div>
+      </div>
+      <span class="badge oblig">Obligatoria</span>
+    </div>
+
+    <div class="row">
+      <div class="num">3</div>
+      <span class="icon">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="7" y="10" width="26" height="24" rx="2.5" fill="#BFD9F5"/>
+          <rect x="13" y="6" width="14" height="8" rx="2" fill="#5B8FC9"/>
+          <circle cx="27" cy="27" r="8.5" fill="#E8863A"/>
+          <path d="M27 23V31M23.2 26.8L27 23L30.8 26.8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <div class="rtext">
+        <div class="name">Trabajo Colaborativo</div>
+        <div class="sub">Entrega en recurso Tarea</div>
+      </div>
+      <span class="badge oblig">Obligatoria</span>
+    </div>
+
+    <div class="row">
+      <div class="num">4</div>
+      <span class="icon">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8C6 6.34 7.34 5 9 5H24C25.66 5 27 6.34 27 8V18C27 19.66 25.66 21 24 21H13L7 26V21H9C7.34 21 6 19.66 6 18V8Z" fill="#5B8FC9"/>
+          <path d="M16 15C16 13.34 17.34 12 19 12H31C32.66 12 34 13.34 34 15V22C34 23.66 32.66 25 31 25V30L26 25H19C17.34 25 16 23.66 16 22V15Z" fill="#7FB88A"/>
+        </svg>
+      </span>
+      <div class="rtext">
+        <div class="name">Foro de cierre</div>
+        <div class="sub">Reflexión final con IAGen</div>
+      </div>
+      <span class="badge opt">Foro · 2 de 2</span>
+    </div>
+
+    <p class="foot">Si no participaron en uno de los dos foros, pueden completarlo con el otro — siempre que tengan aprobadas las actividades de semana 2 y semana 3.</p>
+
+  </div>
+</div>
+
+</body>
+</html>
